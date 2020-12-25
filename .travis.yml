@@ -8,4 +8,4 @@ install:
 - nuget install NUnit.Console -Version 3.12.0 -OutputDirectory testrunner
 script:
   - msbuild /p:Configuration=Release solution-name.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./Travis_Demo/bin/Release/Travis_Demo.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.12.0/tools/nunit3-console.exe ./Travis_Demo/bin/Release/Travis_Demo.dll
