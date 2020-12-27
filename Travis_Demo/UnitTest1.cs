@@ -9,10 +9,11 @@ namespace Travis_Demo
         {
         }
 
-        [Test]
-        public void Test1()
+        [TestCase(1)]
+        [TestCase(2)]
+        public void Test1(int num)
         {
-            Assert.Pass();
+            Assert.That(num == 1);
         }
     }
 }
