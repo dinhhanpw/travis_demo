@@ -9,6 +9,6 @@
     
      steps:
        - checkout
-       - run: donet restore
-       - run: dotnet test Travis_Demo.sln 
+       - run: dotnet restore Travis_Demo.sln
+       - run: dotnet test Travis_Demo.sln
        - run: dotnet build
